@@ -131,7 +131,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-# AUTH_USER_MODEL = 'User.Account'
+AUTH_USER_MODEL = 'User.Account'
 # core/settings.py
 
 
