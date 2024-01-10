@@ -1,0 +1,1 @@
+короче чтобы запустить это чудо надо создать .env(прописать инфы о проекте secret key и тд) и в терминале pip install pipenv  pipenv shell pipenv install django pipenv install django-allauth==0.52.0 pipenv install django-taggit cd exchange python manage.py makemigrations python manage.py migrate python manage.py runserver
