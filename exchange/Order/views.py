@@ -1,5 +1,5 @@
 from django.shortcuts import get_list_or_404
-from django.views.generic import ListView, View
+from django.views.generic import ListView, View, CreateView
 from .models import Order
 
 
@@ -20,4 +20,8 @@ class SearchOrderView(ListView):
         context = super().get_context_data(*args, **kwargs)
         context["q"] = f'q={self.request.GET.get("q")}&'
         return context
+
+class AddOrderView(CreateView):
+    model = Order
+    fields = ['']
 
